@@ -12,12 +12,19 @@
       </div>
       <!-- end sidebar toggle -->
 
-      <p class="uppercase text-xs text-gray-600 mb-4 tracking-wider">homes</p>
+      <p class="uppercase text-xs text-gray-600 mb-4 tracking-wider">app</p>
 
       <!-- link -->
-      <a href="./index.html" class="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
+      <a href="{{ route('admin.dashboard.index') }}" class="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
         <i class="fad fa-chart-pie text-xs mr-2"></i>                
         Analytics dashboard
+      </a>
+      <!-- end link -->
+      
+      <!-- link -->
+      <a href="{{ route('admin.attendance.index') }}" class="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
+        <i class="fad fa-solid fa-mobile text-xs mr-2"></i>
+        Attendance
       </a>
       <!-- end link -->
 
