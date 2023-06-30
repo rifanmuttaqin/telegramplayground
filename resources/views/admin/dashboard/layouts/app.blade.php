@@ -57,7 +57,7 @@
 
           <button class="menu-btn focus:outline-none focus:shadow-outline flex flex-wrap items-center">
             <div class="w-8 h-8 overflow-hidden rounded-full">
-              <img class="w-full h-full object-cover" src="img/user.svg" >
+              <img class="w-full h-full object-cover" src="{{ URL::to('/') }}/img/user.svg" >
             </div> 
 
             <div class="ml-2 capitalize flex ">
