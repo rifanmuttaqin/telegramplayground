@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Api\v1\AttendanceController;
+use App\Http\Controllers\Api\v1\BotTelegramReplayController;
+use App\Http\Controllers\Api\v1\SetWebHookController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -22,3 +24,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::group(['prefix' => 'v1'], function () {
     Route::get('/attendace/accountinfo', [AttendanceController::class, 'accountInfo'])->name('api.v1.attendance.accountInfo');
 });
+
+Route::post('replay',[BotTelegramReplayController::class,'replay']);
+
