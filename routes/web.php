@@ -18,5 +18,4 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix' => 'dashboard'], function () {
     Route::get('/', [DashboardController::class, 'index'])->name('admin.dashboard.index');
     Route::get('/attendace', [AttendanceController::class, 'index'])->name('admin.attendance.index');
-    Route::get('/attendace/show', [AttendanceController::class, 'show'])->name('admin.attendance.show');
 });

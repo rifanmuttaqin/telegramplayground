@@ -39,16 +39,5 @@ class AttendanceController extends Controller
         }
 
         return view('admin.dashboard.attendance.index');
-    }
-
-     /**
-     * Show the bot information.
-     */
-    public function show()
-    {
-        $response = $this->telegram->getMe();
-
-        return $response;
-    }
-    
+    }    
 }
