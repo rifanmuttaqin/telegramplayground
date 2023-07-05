@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Telegram\Bot\Laravel\Facades\Telegram;
 
-class BotTelegramReplayController extends BaseMessageHandleController
+class BotTelegramReplayController extends Controller
 {
     private $base;
 
